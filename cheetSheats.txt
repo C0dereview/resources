@@ -103,3 +103,4 @@ t lon                   # show more indepth info about everything
 /help       # open the help
 /close      # close the buffer or channel
 
+# dmk 
