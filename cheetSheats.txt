@@ -1,20 +1,19 @@
-# ============================================================================
-    # Unix CheetSheat
-# ============================================================================ 
+# ================================================================
+# Unix CheetSheat
+# ================================================================
 
-fn + f8                     # hide cursor
 mv file1 file2              # move file OR change filename
 cat file                    # output a file in The Terminal
 scp file user@host:dir      # upload a file
 open -a applicationName     # open an application
-ssh mini.local              # ssh on mini on local network
-ssh french server           # ssh root@212.47.227.131
+ssh [name].local            # ssh on [name] on local network
+ssh onto a server           # ssh root@111.22.333.444 [numbers]
 C-l                         # clear (screen or pane)
-ls -a                       # list all files (including hidden files)
+ls -a                       # list all files (including hidden)
 
-# ============================================================================
+# ================================================================
 # tmux CheetSheat
-# ============================================================================
+# ================================================================
 
 tmux new -s session-name    # open and name a tmux session
 tmux ls                     # list tmux sessions
@@ -30,12 +29,12 @@ C-f &                       # kill window
 C-f d                       # detach from session
 C-f o                       # swap panes
 C-f n                       # next window
-C-f space                   # toggle between horizontal and vertical panes
+C-f space                   # toggle horizontal, vertical panes
 :so ~/.tmux.conf            # source tmux after config change
 
-# ============================================================================
+# ================================================================
 # nvim CheetSheat
-# ============================================================================
+# ================================================================
 
 C-n                         # autocomplete
 .                           # repeat last change
@@ -63,9 +62,9 @@ xp                          # switch two letters
 C-x C-f                     # autocomplete file name
 :bufdo                      # use :q! or :w instead
 
-# ============================================================================
+# ================================================================
 # SoX CheetSheat
-# ============================================================================
+# ================================================================
 
 play name                   # play a named file
 C-z                         # pause
@@ -79,16 +78,16 @@ repeat 5                    # repeat 5 times (.wav = clean)
 play C-t                    # Fuzzy find a track 
 fade [type] fade-in-length [stop-position(=) [fade-out-length]]
 
-# ============================================================================
+# ================================================================
 # Taskwarrior CheetSheat
-# ============================================================================
+# ================================================================
 
 man task                # bring up the manual (q to exit)
 t add [name]            # add and name a task
 t ls                    # list tasks compactly (alphabetically)
-t li                    # list tasks completly (in order of addition)
+t li                    # list tasks completly (addition order)
 t [number] done         # mark task as done
-t log                   # add a task which has already been completed
+t log                   # add a completed task
 t [number] pro:[name]   # put a task in a project
 t li pro:[name]         # list the tasks in a project
 t [number] mod +[name]  # add a tag to a task
@@ -96,9 +95,16 @@ t [number] mod -[name]  # remove a tag from a task
 t [number] edit         # edit anything about a task
 t lon                   # show more indepth info about everything
 
-# ============================================================================
+# ================================================================
 # weechat CheetSheat
-# ============================================================================
+# ================================================================
 
 /help       # open the help
 /close      # close the buffer or channel
+
+# ================================================================
+# ffmpeg CheetSheat
+# ================================================================
+
+ffmpeg -i HowToSolder.webm HowToSolder.mp4 # convert format
+ 
