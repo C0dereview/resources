@@ -1,5 +1,11 @@
 # ================================================================
-# Unix CheetSheat
+# Fzf 
+# ================================================================
+
+C-r                         # fuzzy search in history
+
+# ================================================================
+# Unix 
 # ================================================================
 
 mv file1 file2              # move file OR change filename
@@ -12,7 +18,7 @@ C-l                         # clear (screen or pane)
 ls -a                       # list all files (including hidden)
 
 # ================================================================
-# tmux CheetSheat
+# tmux 
 # ================================================================
 
 tmux new -s session-name    # open and name a tmux session
@@ -33,7 +39,7 @@ C-f space                   # toggle horizontal, vertical panes
 :so ~/.tmux.conf            # source tmux after config change
 
 # ================================================================
-# nvim CheetSheat
+# nvim 
 # ================================================================
 
 C-n                         # autocomplete
@@ -63,7 +69,7 @@ C-x C-f                     # autocomplete file name
 :bufdo                      # use :q! or :w instead
 
 # ================================================================
-# SoX CheetSheat
+# SoX 
 # ================================================================
 
 play name                   # play a named file
@@ -79,7 +85,7 @@ play C-t                    # Fuzzy find a track
 fade [type] fade-in-length [stop-position(=) [fade-out-length]]
 
 # ================================================================
-# Taskwarrior CheetSheat
+# Taskwarrior 
 # ================================================================
 
 man task                # bring up the manual (q to exit)
@@ -96,14 +102,14 @@ t [number] edit         # edit anything about a task
 t lon                   # show more indepth info about everything
 
 # ================================================================
-# weechat CheetSheat
+# weechat 
 # ================================================================
 
 /help       # open the help
 /close      # close the buffer or channel
 
 # ================================================================
-# ffmpeg CheetSheat
+# ffmpeg 
 # ================================================================
 
 ffmpeg -i a.webm b.mp4  # convert format
@@ -113,4 +119,4 @@ ffmpeg -ss 0:01:56 -i a.mov -c copy -t 0:03:24 b.mov
 
 ffmpeg -i a.mp4 -i b.wav -map 0:0 -map 1:0 -c:v copy -c:a aac -b:a 320k -shortest c.mp4
 # replace audio in a video file
-# new thing
+
