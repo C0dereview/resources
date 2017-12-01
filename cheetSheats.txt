@@ -1,4 +1,10 @@
 # ================================================================
+# SCvim
+# ================================================================
+
+:SClangStart                # run from w/in vim to start sc
+
+# ================================================================
 # Fzf 
 # ================================================================
 
@@ -36,6 +42,8 @@ C-f d                       # detach from session
 C-f o                       # swap panes
 C-f n                       # next window
 C-f space                   # toggle horizontal, vertical panes
+C-f {                       # move the current pane to the previous position
+C-f }                       # move the current pane to the next position
 :so ~/.tmux.conf            # source tmux after config change
 
 # ================================================================
