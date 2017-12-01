@@ -3,6 +3,9 @@
 # ================================================================
 
 :SClangStart                # run from w/in vim to start sc
+C-e                         # evaluate line
+C-b                         # evaluate block
+fn-f12                      # silence
 
 # ================================================================
 # Fzf 
