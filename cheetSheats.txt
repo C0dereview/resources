@@ -2,128 +2,130 @@
 # SCvim
 # ================================================================
 
-:SClangStart                # run from w/in vim to start sc
-C-e                         # evaluate line
-C-b                         # evaluate block
-fn-f12                      # silence
+:SClangStart                    # run from w/in vim to start sc
+C-e                             # evaluate line
+C-b                             # evaluate block
+fn-f12                          # silence
+:setlocal spell spelllang=en_us # turn on spellcheck us english
+:set nospell					# turn off spellcheck
 
 # ================================================================
 # Fzf 
 # ================================================================
 
-C-r                         # fuzzy search in history
+C-r                         	# fuzzy search in history
 
 # ================================================================
 # Unix 
 # ================================================================
 
-mv file1 file2              # move file OR change filename
-cat file                    # output a file in The Terminal
-scp file user@host:dir      # upload a file
-open -a applicationName     # open an application
-ssh [name].local            # ssh on [name] on local network
-ssh onto a server           # ssh root@111.22.333.444 [numbers]
-C-l                         # clear (screen or pane)
-ls -a                       # list all files (including hidden)
+mv file1 file2              	# move file OR change filename
+cat file                    	# output a file in The Terminal
+scp file user@host:dir      	# upload a file
+open -a applicationName     	# open an application
+ssh [name].local            	# ssh on [name] on local network
+ssh onto a server           	# ssh root@111.22.333.444 [numbers]
+C-l                         	# clear (screen or pane)
+ls -a                       	# list all files (including hidden)
 
 # ================================================================
 # tmux 
 # ================================================================
 
-tmux new -s session-name    # open and name a tmux session
-tmux ls                     # list tmux sessions
-tmux attach -t [name]       # attach to a named session
-C-f c                       # open new window
-C-f ,                       # open rename window dialog
-C-f %                       # open new vertical pane
-C-f "                       # open new horisontal pane
-C-f :                       # give tmux a named command
-C-l                         # clear history w/in pane/window
-C-f x                       # kill pane
-C-f &                       # kill window
-C-f d                       # detach from session
-C-f o                       # swap panes
-C-f n                       # next window
-C-f space                   # toggle horizontal, vertical panes
-C-f {                       # move the current pane to the previous position
-C-f }                       # move the current pane to the next position
-:so ~/.tmux.conf            # source tmux after config change
+tmux new -s session-name    	# open and name a tmux session
+tmux ls                     	# list tmux sessions
+tmux attach -t [name]       	# attach to a named session
+C-f c                       	# open new window
+C-f ,                       	# open rename window dialog
+C-f %                       	# open new vertical pane
+C-f "                       	# open new horisontal pane
+C-f :                       	# give tmux a named command
+C-l                         	# clear history w/in pane/window
+C-f x                       	# kill pane
+C-f &                       	# kill window
+C-f d                       	# detach from session
+C-f o                       	# swap panes
+C-f n                       	# next window
+C-f space                   	# toggle horizontal, vertical panes
+C-f {                       	# move the current pane to the previous position
+C-f }                       	# move the current pane to the next position
+:so ~/.tmux.conf            	# source tmux after config change
 
 # ================================================================
 # nvim 
 # ================================================================
 
-C-n                         # autocomplete
-.                           # repeat last change
-C-a                         # increment value
-C-x                         # decrement value
-:sav [name]                 # save as
-:w                          # save (after sav)
-v                           # visual mode
-V                           # visual column mode
-gq                          # quantise line length
-n                           # normal mode
-0                           # go to beginning of line
-$                           # go to end of line
-{                           # move up one paragraph
-}                           # move down one paragraph
-i                           # insert mode
-w                           # word
-e                           # end of word
-gg                          # move to first line
-G                           # move to last line
-yy                          # copy line
-p                           # paste below
-P                           # paste above
-xp                          # switch two letters
-C-x C-f                     # autocomplete file name
-:bufdo                      # use :q! or :w instead
+C-n                         	# autocomplete
+.                           	# repeat last change
+C-a                         	# increment value
+C-x                         	# decrement value
+:sav [name]                 	# save as
+:w                          	# save (after sav)
+v                           	# visual mode
+V                           	# visual column mode
+gq                          	# quantise line length
+n                           	# normal mode
+0                           	# go to beginning of line
+$                           	# go to end of line
+{                           	# move up one paragraph
+}                           	# move down one paragraph
+i                           	# insert mode
+w                           	# word
+e                           	# end of word
+gg                          	# move to first line
+G                           	# move to last line
+yy                          	# copy line
+p                           	# paste below
+P                           	# paste above
+xp                          	# switch two letters
+C-x C-f                     	# autocomplete file name
+:bufdo                      	# use :q! or :w instead
 
 # ================================================================
 # SoX 
 # ================================================================
 
-play name                   # play a named file
-C-z                         # pause
-fg Enter                    # resume
-C-c                         # stop
-ls *.mp3 > playlist.m3u     # playlist from folder contents
-C-c when in playlist        # skip
-C-c twice when in playlist  # quit playlist
-trim 5:0                    # start playback 5 minutes in
-repeat 5                    # repeat 5 times (.wav = clean)
-play C-t                    # Fuzzy find a track 
+play name                   	# play a named file
+C-z                         	# pause
+fg Enter                    	# resume
+C-c                         	# stop
+ls *.mp3 > playlist.m3u     	# playlist from folder contents
+C-c when in playlist        	# skip
+C-c twice when in playlist  	# quit playlist
+trim 5:0                    	# start playback 5 minutes in
+repeat 5                    	# repeat 5 times (.wav = clean)
+play C-t                    	# Fuzzy find a track 
 fade [type] fade-in-length [stop-position(=) [fade-out-length]]
 
 # ================================================================
 # Taskwarrior 
 # ================================================================
 
-man task                # bring up the manual (q to exit)
-t add [name]            # add and name a task
-t ls                    # list tasks compactly (alphabetically)
-t li                    # list tasks completly (addition order)
-t [number] done         # mark task as done
-t log                   # add a completed task
-t [number] pro:[name]   # put a task in a project
-t li pro:[name]         # list the tasks in a project
-t [number] mod +[name]  # add a tag to a task
-t [number] mod -[name]  # remove a tag from a task
-t [number] edit         # edit anything about a task
-t lon                   # show more indepth info about everything
+man task                   	 	# bring up the manual (q to exit)
+t add [name]            		# add and name a task
+t ls                    		# list tasks compactly (alphabetically)
+t li                    		# list tasks completly (addition order)
+t [number] done         		# mark task as done
+t log                   		# add a completed task
+t [number] pro:[name]   		# put a task in a project
+t li pro:[name]         		# list the tasks in a project
+t [number] mod +[name]  		# add a tag to a task
+t [number] mod -[name]  		# remove a tag from a task
+t [number] edit         		# edit anything about a task
+t lon                   		# show more indepth info about everything
 
 # ================================================================
 # weechat 
 # ================================================================
 
-/help       # open the help
-/close      # close the buffer or channel
+/help       					# open the help
+/close      					# close the buffer or channel
 
 # ================================================================
 # ffmpeg 
 # ================================================================
 
-ffmpeg -i a.webm b.mp4  # convert format
+ffmpeg -i a.webm b.mp4  		# convert format
 
 ffmpeg -ss 0:01:56 -i a.mov -c copy -t 0:03:24 b.mov
 # new start, end time, copy w/out recompression
