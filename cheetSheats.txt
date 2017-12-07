@@ -6,8 +6,7 @@
 C-e                             # evaluate line
 C-b                             # evaluate block
 fn-f12                          # silence
-:setlocal spell spelllang=en_us # turn on spellcheck us english
-:set nospell					# turn off spellcheck
+
 
 # ================================================================
 # Fzf 
@@ -80,6 +79,8 @@ P                           	# paste above
 xp                          	# switch two letters
 C-x C-f                     	# autocomplete file name
 :bufdo                      	# use :q! or :w instead
+:setlocal spell spelllang=en_us # turn on spellcheck us english
+:set nospell					# turn off spellcheck 
 
 # ================================================================
 # SoX 
