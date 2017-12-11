@@ -7,7 +7,6 @@ C-e                             # evaluate line
 C-b                             # evaluate block
 fn-f12                          # silence
 
-
 # ================================================================
 # Fzf 
 # ================================================================
@@ -26,6 +25,8 @@ ssh [name].local            	# ssh on [name] on local network
 ssh onto a server           	# ssh root@111.22.333.444 [numbers]
 C-l                         	# clear (screen or pane)
 ls -a                       	# list all files (including hidden)
+sudo reboot                     # reboot your computer
+sudo shutdown                   # shut down your computer
 
 # ================================================================
 # tmux 
