@@ -82,6 +82,7 @@ C-x C-f                     	# autocomplete file name
 :bufdo                      	# use :q! or :w instead
 :setlocal spell spelllang=en_us # turn on spellcheck us english
 :set nospell					# turn off spellcheck 
+:g Ctrl-g                       # word count & other goodies
 
 # ================================================================
 # SoX 
@@ -135,3 +136,5 @@ ffmpeg -ss 0:01:56 -i a.mov -c copy -t 0:03:24 b.mov
 ffmpeg -i a.mp4 -i b.wav -map 0:0 -map 1:0 -c:v copy -c:a aac -b:a 320k -shortest c.mp4
 # replace audio in a video file
 
+ffmpeg -i cats.mp4 -vcodec copy -an cats.mp4
+# delete the audio in a video file
