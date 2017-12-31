@@ -2,10 +2,13 @@
 # SCvim
 # ========================================================================================
 
+tmux                                # begin by opening tmux
+vim *.scd                           # open any .scd file
 :SClangStart                        # run from w/in vim to start sc
 C-e                                 # evaluate line
 C-b                                 # evaluate block
 fn-f12                              # silence
+:SClangRecompile                    # recompile the class library
 
 # ========================================================================================
 # Fzf 
@@ -142,3 +145,13 @@ ffmpeg -i a.mp4 -i b.wav -map 0:0 -map 1:0 -c:v copy -c:a aac -b:a 320k -shortes
 # replace audio in a video file
 
 ffmpeg -i cats.mp4 -vcodec copy -an cats.mp4            # delete the audio in a video file
+
+# ========================================================================================
+# git    
+# ========================================================================================
+
+git add [name]
+git commit -m 'commit message'
+git push
+git add --all
+git commit -am 'commit message'
