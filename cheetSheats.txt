@@ -146,6 +146,11 @@ ffmpeg -i a.mp4 -i b.wav -map 0:0 -map 1:0 -c:v copy -c:a aac -b:a 320k -shortes
 
 ffmpeg -i cats.mp4 -vcodec copy -an cats.mp4            # delete the audio in a video file
 
+ffmpeg -i a.mp4 -vf "shuffleframes=0 2 1" b.mp4         
+# Swap second and third frame of every three frames of the input
+
+a.mp4 -vf format=gray b.mp4                             # convert to gray scale
+
 # ========================================================================================
 # git    
 # ========================================================================================
