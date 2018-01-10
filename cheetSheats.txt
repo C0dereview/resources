@@ -9,7 +9,8 @@ C-e                                 # evaluate line
 C-b                                 # evaluate block
 fn-f12                              # silence
 :SClangRecompile                    # recompile the class library
-
+?                                   # search backwards
+                                
 # ========================================================================================
 # Fzf 
 # ========================================================================================
@@ -86,6 +87,8 @@ C-x C-f                     	    # autocomplete file name
 :setlocal spell spelllang=en_us     # turn on spellcheck us english
 :set nospell					    # turn off spellcheck 
 :g Ctrl-g                           # word count & other goodies
+f [char]                            # move to char forwards        
+F [char]                            # move to char backwards  
 
 # ========================================================================================
 # SoX 
